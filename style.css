@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 6;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    width:100vw;
+    height: 100vh;
+    background: 
+        linear-gradient(336deg, rgba(78, 5, 138, 0.8), rgba(78, 5, 138, 0) 70.71%),
+        linear-gradient(213deg, rgba(155, 8, 130, 0.8), rgba(155, 8, 130, 0) 70.71%),
+        linear-gradient(143deg, rgba(0, 13, 201, 0.8), rgba(0, 13, 201, 0) 70.71%)
+    ;
+   /* background:
+        linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    */
+}
+
+.drop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter:blur(10px) ;
+    background-color: #11251257;
+    z-index: 5;
+}
+
+.calc{
+    display: grid;
+    column-gap: 9px;
+    row-gap: 8px;
+    align-items: center;
+    justify-items: center;
+    width: 50vw;
+    border-radius:50px ;
+    aspect-ratio: 2/1;
+    background-color: #0e7452;
+    border: 8px solid #0c573e;
+    padding: 16px;
+    grid-template-areas: 
+    "result result result result result"
+    "seven eight nine plus back"
+    "four five six mns C"
+    "one two three mltpl eql"
+    "zro zerozero dt dvd eql"
+    ;
+
+    button{
+        background-color:#bad4cc ;
+        aspect-ratio: 1/1;
+        width:80%;
+        height: 80%;
+        font-size: 48px;
+        border: none;
+        border-radius: 50px;
+        border-bottom: 8px solid #778a84 ;
+        border-right: 8px solid #778a84 ;
+        transition: all 0.1s ease-in-out;
+
+    }
+
+    input{
+        background-color: #4e6b53;
+        aspect-ratio: 5/1;
+        font-size: 96px;
+        text-align: right;
+        width: 100%;
+        height: 100%;
+        color: #112512;;
+        border-radius: 50px;
+        font-family: "Doto", sans-serif;
+        border: 8px solid #0c573e;
+    }
+
+    .one {
+        grid-area: one;
+    }
+    .two {
+        grid-area: two;
+    }
+    .three {
+        grid-area: three;
+    }
+    .four {
+        grid-area: four;
+    }
+    .five {
+        grid-area: five;
+    }
+    .six {
+        grid-area: six;
+    }
+    .seven {
+        grid-area: seven;
+    }
+    .eight {
+        grid-area: eight;
+    }
+    .nine {
+        grid-area: nine;
+    }
+    .zero {
+        grid-area: zro;
+    }
+    .dblZero {
+        grid-area: zerozero;
+    }
+    .dot {
+        grid-area: dt;
+    }
+    .plus {
+        grid-area: plus;
+    }
+    .minus {
+        grid-area: mns;
+    }
+    .multiply {
+        grid-area: mltpl;
+    }
+    .divide {
+        grid-area: dvd;
+    }
+    .equal {
+        grid-area: eql;
+        aspect-ratio: 1/2;
+        border-radius: 1000px;
+        background-color: #c55336;
+        border-bottom: 8px solid #682c1d ;
+        border-right: 8px solid #682c1d ;
+    }
+    .clear {
+        grid-area: C;
+    }
+    .oneBack {
+        grid-area: back;
+
+    }
+    .result {
+        grid-area: result;
+    }
+}
+
