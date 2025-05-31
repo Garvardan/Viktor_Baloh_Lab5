@@ -238,7 +238,7 @@ main{
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        padding: 0 0 96px 0;
+        padding-bottom: 96px;
         .section2Description{
             display:flex;
             flex-direction: column;
@@ -256,7 +256,7 @@ main{
                 font-size: 24px;
                 color: var(--textMain);
                 font-weight: 400;
-                padding: 0 0 48px 0;
+                padding-bottom:48px;
             }
         }
 
@@ -287,7 +287,7 @@ main{
     .work{
         display: flex;
         flex-direction: column;
-        padding: 0 0 96px 0;
+        padding-bottom: 96px;
         gap:48px;
         .section3Description{
             display:flex;
@@ -306,7 +306,7 @@ main{
                 font-size: 24px;
                 color: var(--textMain);
                 font-weight: 400;
-                padding: 0 0 48px 0;
+                padding-bottom:48px ;
             }
         }
 
@@ -385,7 +385,7 @@ main{
                 font-size: 24px;
                 color: var(--textMain);
                 font-weight: 400;
-                padding: 0 0 48px 0;
+                padding-bottom: 48px;
             }
         }
 
@@ -395,7 +395,7 @@ main{
             gap:48px;
             align-items: center;
             justify-content: space-between;
-            padding: 0 0 96px 0;
+            padding-bottom: 96px ;
 
             .feedbackExample{
                 display: flex;
@@ -416,4 +416,82 @@ main{
             }
         }
     }
+}
+
+footer{
+    padding-top: 96px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:560px;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    .footerDescription{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:16px;
+        .getInTouch{
+            font-size: 16px;
+            background-color: var(--bgColorSecond);
+            color: var(--textMain);
+            padding: 4px 20px;
+            border-radius: 8px;
+            font-weight: 400;
+        }
+        .freeToAsk{
+            font-size: 24px;
+            color: var(--textMain);
+            font-weight: 400;
+            padding: 0 0 48px 0;
+        }
+    }
+
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:18px;
+        .email, .phone{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap:20px;
+            color: var(--textSecond);
+            font-weight: 700;
+            font-size: 30px;
+            span{
+                color: var(--textMain);
+            }
+        }
+    }
+
+
+    .alsoOn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:18px;
+        color: var(--textMain);
+        .links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap:8px;
+        }
+    }
+}
+
+.copyright{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    text-align: center;
+    color: var(--textMain);
 }
