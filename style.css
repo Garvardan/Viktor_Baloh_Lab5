@@ -4,7 +4,7 @@
     --textMain:rgb(75,85,99);
     --textSecond:rgb(17, 24, 39);
     --bgColorMain:rgb(255,255,255);
-    --bgColorSecond:rgb(249,250,251)
+    --bgColorSecond:rgb(249,250,251);
 }
 *{
     box-sizing: border-box;
@@ -12,11 +12,15 @@
 
 body{
     padding: 0 10vw 0 10vw;
+    background-color: var(--bgColorMain);
 }
 
 button{
     background-color: transparent;
     border: none;
+    :hover{
+        cursor: pointer;
+    }
 }
 
 .navbar, header, section, footer, .copyright{
